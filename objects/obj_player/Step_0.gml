@@ -1,22 +1,29 @@
 /// @description Insert description here
 // You can write your code in this editor
-key_left = keyboard_check(ord("A"));
-key_right = keyboard_check(ord("D"));
-key_jump = keyboard_check_pressed(vk_space);
 
-if (key_left) || (key_right) || (key_jump) {
-	controller = 0;
-}
+if (hascontrol) {
+	key_left = keyboard_check(ord("A"));
+	key_right = keyboard_check(ord("D"));
+	key_jump = keyboard_check_pressed(vk_space);
 
-if (abs(gamepad_axis_value(4, gp_axislh)) > 0.2) {
-	key_left = abs(min(gamepad_axis_value(4,gp_axislh),0));
-	key_right = max(gamepad_axis_value(4,gp_axislh),0);
-	controller = 1;
-}
+	if (key_left) || (key_right) || (key_jump) {
+		controller = 0;
+	}
 
-if (gamepad_button_check_pressed(4,gp_shoulderlb)) {
-	key_jump = 1;
-	controller = 1;	
+	if (abs(gamepad_axis_value(4, gp_axislh)) > 0.2) {
+		key_left = abs(min(gamepad_axis_value(4,gp_axislh),0));
+		key_right = max(gamepad_axis_value(4,gp_axislh),0);
+		controller = 1;
+	}
+
+	if (gamepad_button_check_pressed(4,gp_shoulderlb)) {
+		key_jump = 1;
+		controller = 1;	
+	}
+} else {
+	key_right = 0;
+	key_left = 0;
+	key_jump = 0;
 }
 
 var move = key_right - key_left;
@@ -26,7 +33,7 @@ hsp = move * walksp;
 vsp = vsp + grv;
 
 if (place_meeting(x,y+1,obj_wall)) && (key_jump) {
-	vsp = -7;
+	vsp = -8;
 }
 
 if (place_meeting(x+hsp, y, obj_wall)) {
@@ -60,3 +67,4 @@ if (hsp != 0) {
 	image_xscale = sign(hsp);
 }
 
+ 

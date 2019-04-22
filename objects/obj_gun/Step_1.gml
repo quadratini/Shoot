@@ -3,7 +3,6 @@
 x = obj_player.x+4;
 y = obj_player.y+5;
 
-
 if (obj_player.controller == 0) {
 	image_angle = point_direction(x,y,mouse_x,mouse_y);
 } else {
@@ -18,10 +17,10 @@ if (obj_player.controller == 0) {
 firingdelay = firingdelay - 1; //reduce this delay until it finally hits 0
 recoil = max(0, recoil - 1);
 
-if (mouse_check_button(mb_left)) || gamepad_button_check(4,gp_shoulderrb) && (firingdelay < 0) {
+if ((mouse_check_button(mb_left)) || gamepad_button_check(4,gp_shoulderrb)) && (firingdelay < 0) {
 	recoil = 4.5;
-	firingdelay = 7;  //7 frames after our last bullet was created
-	with (instance_create_layer(x,y, "Bullets", obj_bullet)) {
+	firingdelay =  3;  //4 frames after our last bullet was created
+	with (instance_create_layer(x - lengthdir_x(15, image_angle),y - lengthdir_y(10, image_angle), "Bullets", obj_bullet)) {
 		speed = 25;
 		direction = other.image_angle + random_range(-1,1);
 		image_angle = direction;

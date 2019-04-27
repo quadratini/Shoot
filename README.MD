@@ -1,4 +1,4 @@
 # Small Platformer game
-![sample](http://prntscr.com/nhnl4t)
+![sample](/shoot.png)
 Mini game with 2 stages. Gamepad compatable.
 #### Created by Ronny Ritprasert

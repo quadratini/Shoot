@@ -3,6 +3,7 @@
 hsp = 0;
 vsp = 0;
 grv = 0.5; 
-walksp = 7;
+walksp = 5;
 controller = 0;
 hascontrol = true;
+game_set_speed(60,gamespeed_fps); 

@@ -1,5 +1,6 @@
- /// @description Insert description here
-// You can write your code in this editor
+/// @description Insert description here
+// You can write your code in this editor 
+
 if (done == 0) {
 	vsp = vsp + grv;
 
@@ -14,7 +15,9 @@ if (done == 0) {
 	if (place_meeting(x,y+vsp, obj_wall)) {
 		if (vsp > 0) {
 			done = 1;
-			image_index = 1;
+			//image_index = 1;
+			alarm[0] = 60;
+			
 		}
 		while (!place_meeting(x,y+sign(vsp), obj_wall)) {
 			y = y + sign(vsp);
@@ -22,5 +25,4 @@ if (done == 0) {
 		vsp = 0;
 	}
 	y = y + vsp; 
-	kills++;
 }

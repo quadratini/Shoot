@@ -19,7 +19,7 @@ recoil = max(0, recoil - 1);
 
 if ((mouse_check_button(mb_left)) || gamepad_button_check(4,gp_shoulderrb)) && (firingdelay < 0) {
 	recoil = 4.5;
-	firingdelay =  3;  //4 frames after our last bullet was created
+	firingdelay =  4;  //4 frames after our last bullet was created
 	with (instance_create_layer(x - lengthdir_x(15, image_angle),y - lengthdir_y(10, image_angle), "Bullets", obj_bullet)) {
 		speed = 25;
 		direction = other.image_angle + random_range(-1,1);

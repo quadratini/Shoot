@@ -1,38 +1,38 @@
 {
-    "id": "c32ee149-f41f-440f-8722-5898cce367c1",
+    "id": "a81487e6-03ab-4a20-9731-75e6d0ad23c2",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_golem",
+    "name": "obj_pDead",
     "eventList": [
         {
-            "id": "78800019-9b3b-4500-bb7d-869ee05ea450",
+            "id": "c3e7f7d3-8dec-4527-8a64-e00008e0084c",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "c32ee149-f41f-440f-8722-5898cce367c1"
+            "m_owner": "a81487e6-03ab-4a20-9731-75e6d0ad23c2"
         },
         {
-            "id": "569f0f36-142c-4a39-84da-5e0da2bb8ddc",
+            "id": "8a163419-0e8c-42bd-bafe-454b4d4c1887",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "c32ee149-f41f-440f-8722-5898cce367c1"
+            "m_owner": "a81487e6-03ab-4a20-9731-75e6d0ad23c2"
         },
         {
-            "id": "c2650d86-832a-4530-b4c0-0297cf3b76a1",
+            "id": "ec65b62b-06cd-4811-a93f-cdfc5d661503",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
-            "eventtype": 3,
-            "m_owner": "c32ee149-f41f-440f-8722-5898cce367c1"
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "a81487e6-03ab-4a20-9731-75e6d0ad23c2"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -51,23 +51,8 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": [
-        {
-            "id": "aad84716-97c4-484b-85d3-ae119e32b08d",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "False",
-            "varName": "  hasWeapon",
-            "varType": 3
-        }
-    ],
+    "properties": null,
     "solid": false,
-    "spriteId": "1da77bcf-6029-47e4-8dd2-95bc99201035",
+    "spriteId": "9ca0e4b8-ebd2-4c69-9837-a62b60cd4355",
     "visible": true
 }
